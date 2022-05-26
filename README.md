@@ -2,17 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-Runs a sequence of gulp tasks in the specified order.  This function is designed to solve the situation where you have defined run-order, but choose not to or cannot use dependencies.
-
-> ### Is your company hiring Node developers?
->
-> If you are hiring developers, you can support this project and future open source work by checking out our company, [Qualified.io](https://www.qualified.io/?utm_source=run-sequence).
->
-> Qualified is a service for online skills-assessment that can help you easily vet developers across a wide range of real-world programming skills.
->
-> Please help support this project, and [sign up for a free trial](https://www.qualified.io/?utm_source=run-sequence).
-
-
+Runs a sequence of gulp tasks in the specified order.  This function is designed to solve the situation where you have defined run-order, but choose not to or cannot use dependencies. Works with common.js
 
 Each argument to `run-sequence` is run in order.  This works by listening to the `task_stop` and `task_err` events, and keeping track of which tasks have been completed.  You can still run some of the tasks in parallel, by providing an array of task names for one or more of the arguments.
 
@@ -122,8 +112,8 @@ gulp.task('task', function(cb) {
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
 
-[npm-url]: https://npmjs.org/package/run-sequence
+[npm-url]: https://npmjs.org/package/run-sequence-commonjs
 [npm-image]: https://badge.fury.io/js/run-sequence.png
 
-[travis-url]: http://travis-ci.org/OverZealous/run-sequence
-[travis-image]: https://secure.travis-ci.org/OverZealous/run-sequence.png?branch=master
+[travis-url]: http://travis-ci.org/DMackintosh-TNL/run-sequence-commonjs
+[travis-image]: https://secure.travis-ci.org/DMackintosh-TNL/run-sequence.png?branch=master
